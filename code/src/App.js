@@ -80,7 +80,7 @@ export const App = () => {
       }, 
       body: JSON.stringify({ message: messageNew,  username: username  })
     }
-    fetch (API_URL (page, perPage), options) 
+    fetch(API_URL (page, perPage), options) 
       .then(res => {
         if (res.status === 200) { 
           return res.json()
@@ -120,6 +120,7 @@ export const App = () => {
     .then(receivedMessage => {
       //Increasing hearts when user likes a message with map and returning the new value
       const updatedMessageList = messageList.map(message => {
+
         if (message._id === receivedMessage.data._id) {
             message.hearts += 1
         }

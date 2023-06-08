@@ -2,7 +2,8 @@ import React from 'react'
 import moment from 'moment'
 
 
-const MessageElement = ({ message, onLikesIncrease, count }) => {
+const MessageElement = ({ message, onLikesIncrease }) => {
+  //console.log(count, 'heej')
   return (
     <>
       <p className="message-content">{message.message}</p>
@@ -19,7 +20,6 @@ const MessageElement = ({ message, onLikesIncrease, count }) => {
           <p>x{message.hearts}</p>
         </div> 
         <div>
-          <p className="likes"> You <span role="img" aria-label="like"> ❤️</span>{count.count} times</p> 
           <p className="time">{moment(message.createdAt).fromNow()}</p>
         </div>
       </div>
