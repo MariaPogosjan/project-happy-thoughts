@@ -24,4 +24,4 @@ I had a huge problem with connecting my heart button and the amount of likes, an
 ## View it live
 
 Write your lovely happy thoughts here: https://your-happy-thoughts.netlify.app/
-BE: https://project-happy-thoughts-api-iyve5wmsva-lz.a.run.app/ 
+BE: https://project-happy-thoughts-api-5j5sndevjq-lz.a.run.app/
